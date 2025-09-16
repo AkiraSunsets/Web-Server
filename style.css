@@ -1,0 +1,300 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #564d4d;
+}
+
+.body-page{ /*background imagem netflix tela login */
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    background-image: url("./img/wallpaper-netflix.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.body-page::after {/*sombra preta sobre o background login*/
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.5)); /* sombra */
+}
+
+.body-page > * {
+    position: relative;
+    z-index: 1;
+}
+
+
+nav ul{
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-color: black;
+    gap: 10px;
+    align-items: center;
+    height: 30px;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    margin-right: 30px;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav a:hover{
+    text-decoration: underline 2px red;
+}
+
+header{
+    width: 100%;
+    height: 60px;
+    background-color:#000000;
+    align-items: center;
+    justify-content: left;
+    display: flex;
+}
+
+header h1 {
+    font-family: "Inter", sans-serif;
+    font-size: 30px;
+    color: #db0000;
+    font-weight: 900;
+    font-style: italic;
+    font-weight: bold;
+    padding: 10px;
+    text-shadow: 2px 2px 4px #564d4d;
+}
+
+/*================ Página Login ==========================*/
+.login-page {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    margin-top: 70px;
+    align-items: center;
+    padding: 30px;
+    width: 400px;
+    height: 450px;
+    background-color: #000000;
+    background-color: rgba(0, 0, 0, 0.8);
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.login-page h2{
+    color: white;
+    font-size: 35px;
+    text-align: center;
+    display: flex;
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 20px;
+}
+
+.login-page p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.login-input{
+    display: block;
+    margin-bottom: 20px;
+}
+
+.login-input label{
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+
+}
+
+.login-input input{
+    display: block;
+    width: 350px;
+    height: 50px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: left;
+    margin-bottom: 15px;
+    opacity: 60%;
+    background-color: #000000;
+    color: white;
+    padding: 10px 15px;
+    font-size: 15px;
+}
+
+.placeholder-class::placeholder {
+    color: white;
+    transition: all 0.3s ease-in-out; 
+    opacity: 100%;
+    text-align: left;
+    display: flex;
+    padding: 10px 15px;
+}
+
+.placeholder-class:focus::placeholder{
+    opacity: 0;
+    transform: translateY(-15px) scale(0.8);
+}
+
+.button-login{
+    width: 350px;
+    background-color: #db0000;
+    filter: brightness(1.2); 
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.button-login a{
+        text-decoration: none;
+}
+
+.login-input a{
+    text-align: center;
+    color: white;
+    justify-content: center;
+}
+
+/*==================== Página Cadastro ============================*/
+.link-voltar{
+    display: flex;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 18px;
+}
+
+.cadastro-page {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    margin-top: 70px;
+    align-items: center;
+    padding: 30px;
+    width: 400px;
+    height: 800px;
+    background-color: #000000;
+    background-color: rgba(0, 0, 0, 0.8);
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.cadastro-page h2{
+    color: white;
+    font-size: 35px;
+    text-align: center;
+    display: flex;
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 20px;
+}
+
+.cadastro-page p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.cadastro-input{
+    display: block;
+    margin-bottom: 20px;
+}
+
+.cadastro-input label{
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+
+}
+
+.cadastro-input input{
+    display: block;
+    width: 350px;
+    height: 50px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: left;
+    margin-bottom: 15px;
+    opacity: 60%;
+    background-color: #000000;
+    color: white;
+    padding: 10px 15px;
+    font-size: 15px;
+}
+
+.placeholder-class::placeholder {
+    color: white;
+    transition: all 0.3s ease-in-out; 
+    opacity: 100%;
+    text-align: left;
+    display: flex;
+    padding: 10px 15px;
+}
+
+.placeholder-class:focus::placeholder{
+    opacity: 0;
+    transform: translateY(-15px) scale(0.8);
+}
+
+.button-cadastro{
+    width: 350px;
+    background-color: #db0000;
+    filter: brightness(1.2); 
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.button-cadastro a{
+        text-decoration: none;
+}
+
+.cadastro-input a{
+    text-align: center;
+    color: white;
+    justify-content: center;
+}
+
+/*============Footer ===============*/
+footer{
+    height: 50px;
+    width: 100%;
+    background-color: #000000;
+     display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p{
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
