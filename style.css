@@ -113,6 +113,7 @@ header h1 {
 .login-input{
     display: block;
     margin-bottom: 20px;
+    color: white;
 }
 
 .login-input label{
@@ -282,7 +283,9 @@ header h1 {
     color: white;
     justify-content: center;
 }
+/*============== index page ==================*/
 
+.index
 /*============Footer ===============*/
 footer{
     height: 50px;

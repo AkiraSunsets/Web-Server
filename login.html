@@ -17,26 +17,29 @@
             LET MOVIE🍿
         </h1>
     </header>
-    
+
     <section class="login-page">
-        
+
         <h2>Entrar</h2>
 
-        <form class="login-input">
-            <label for="name">Usuário:</label>
-            <input type="text" id="username" name="username" class="placeholder-class" placeholder="Insira seu usuário.">
+        <form class="login-input" action="/send_login" method="post">
+            <label for="email">Usuário:</label>
+            <input type="email" id="email" name="email" class="placeholder-class"
+                placeholder="Insira seu email.">
 
             <label for="password">Senha:</label>
-            <input type="password" id="password" id="password" class="placeholder-class" placeholder="Insira sua senha.">
+            <input type="password" id="password" name="password" class="placeholder-class"
+                placeholder="Insira sua senha.">
 
-            <button class="button-login"><a href="./listar_filmes.html">Entrar</a></button>
+            <button type="submit" class="button-login">Entrar</button>
 
             <p><a href="#">Esqueceu a senha?</a></p>
         </form>
 
     </section>
 </body>
-    <footer>
-        <p>© Copyright all rights reserved - 2025</p>
-    </footer>
+<footer>
+    <p>© Copyright all rights reserved - 2025</p>
+</footer>
+
 </html>
