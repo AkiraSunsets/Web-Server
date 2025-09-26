@@ -135,7 +135,6 @@ header h1 {
     border-radius: 5px;
     text-align: left;
     margin-bottom: 15px;
-    opacity: 60%;
     background-color: #000000;
     color: white;
     padding: 10px 15px;
@@ -241,7 +240,6 @@ header h1 {
     border-radius: 5px;
     text-align: left;
     margin-bottom: 15px;
-    opacity: 60%;
     background-color: #000000;
     color: white;
     padding: 10px 15px;
@@ -285,7 +283,10 @@ header h1 {
 }
 /*============== index page ==================*/
 
-.index
+.index-section-page{
+    color: white;
+}
+
 /*============Footer ===============*/
 footer{
     height: 50px;

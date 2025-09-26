@@ -26,35 +26,37 @@
 
         <h2>Cadastrar Filme</h2>
 
-        <form class="cadastro-input" action="send_cadastro" method="post">
-            <label for="nome-filme">Nome do Filme: </label>
+        <form class="cadastro-input" action="/send_cadastro" method="post">
+            <label for="nome">Nome do Filme: </label>
             <input type="text" id="nome" name="nome" class="placeholder-class" placeholder="Insira o nome do filme.">
 
             <label for="atores">Atores:</label>
-            <input type="text" id="text" class="placeholder-class"
+            <input type="text" id="atores" name="atores" class="placeholder-class"
                 placeholder="Insira o nome dos atores do filme.">
 
-            <label for="director">Diretor:</label>
-            <input type="text" id="text" class="placeholder-class"
+            <label for="diretor">Diretor:</label>
+            <input type="text" id="diretor" name="diretor" class="placeholder-class"
                 placeholder="Insira o nome do diretor do filme.">
 
-            <label for="year">Ano:</label>
-            <input type="number" id="number" class="placeholder-class"
-                placeholder="Insira o nome do ano de lançamento do filme. (Ex: YYYY)" min="1900" max="2099">
+            <label for="ano">Ano:</label>
+            <input type="number" id="ano" name="ano" class="placeholder-class"
+                placeholder="Ano de lançamento (Ex: YYYY)" min="1900" max="2099">
 
-            <label for="gender">Gênero:</label>
-            <input type="text" id="text" class="placeholder-class" placeholder="Insira o gênero do filme.">
+            <label for="genero">Gênero:</label>
+            <input type="text" id="genero" name="genero" class="placeholder-class"
+                placeholder="Insira o gênero do filme.">
 
-            <label for="produ">Produtora:</label>
-            <input type="text" id="text" class="placeholder-class"
+            <label for="produtora">Produtora:</label>
+            <input type="text" id="produtora" name="produtora" class="placeholder-class"
                 placeholder="Insira o nome da produtora do filme.">
 
-            <label for="synopsis">Sinopse:</label>
-            <input type="text" id="text" class="placeholder-class" placeholder="Insira a sinopse do filme.">
+            <label for="sinopse">Sinopse:</label>
+            <input type="text" id="sinopse" name="sinopse" class="placeholder-class"
+                placeholder="Insira a sinopse do filme.">
 
             <button type="submit" class="button-cadastro">Cadastrar Filme</button>
-
         </form>
+
 
     </section>
 </body>
